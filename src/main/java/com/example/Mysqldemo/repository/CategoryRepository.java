@@ -12,15 +12,7 @@ import org.springframework.stereotype.Repository;
 
 import com.example.Mysqldemo.model.Category;
 
-/**
- * By adding the annotation org.springframework.data.mongodb.repository.Query
- * repository finder methods you can specify a MongoDB JSON query string to use
- * instead of having the query derived from the method name.
- * 
- * Ex:Let’s create a repository to interact with Product from the database. In
- * repository package, create CategoryRepository interface that extends
- * MongoRepository.
- */
+
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, String> {
 	/**
